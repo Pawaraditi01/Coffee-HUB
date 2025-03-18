@@ -250,4 +250,102 @@ html
 {
 	scroll-behavior: smooth;
 }
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    text-align: center;
+  }
+
+  .navbar-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    font-size: 16px;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #about .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-md-6 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Gallery .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
+
+/* Tablets and small laptops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .navbar-header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 28px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    font-size: 22px;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Gallery .card {
+    width: 80%;
+    margin: auto;
+  }
+
+  .col-md-5 {
+    text-align: center;
+  }
+
+  .contact form {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .Gallery .card {
+    width: 30%;
+  }
+}
+
 
